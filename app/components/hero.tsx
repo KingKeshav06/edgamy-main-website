@@ -48,7 +48,7 @@ export default function Hero() {
               administrative tasks.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
+            {/* <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
               <Link
                 href="#cta"
                 className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium rounded-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 text-center shadow-lg hover:shadow-xl"
@@ -75,7 +75,7 @@ export default function Hero() {
                   />
                 </svg>
               </Link>
-            </div>
+            </div> */}
 
             {/* Game elements indicators */}
             <div className="hidden md:flex items-center space-x-8 mt-10 text-sm text-gray-300">

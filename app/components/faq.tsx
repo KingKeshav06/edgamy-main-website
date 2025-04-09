@@ -830,12 +830,12 @@ const FAQ = () => {
             >
               Contact Our Team
             </a>
-            <a
+            {/* <a
               href="#"
               className="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-neutral-700 font-medium rounded-lg transition-colors"
             >
               View Documentation
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const Benefits = () => {
@@ -22,7 +23,8 @@ const Benefits = () => {
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {/* Benefit 1 */}
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <Link href={"https://www.novatia.com/blog/exploring-the-impact-of-gamification-in-education?utm_source=chatgpt.com"} >
+          <div className="cursor-pointer bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div className="p-8">
               <div className="w-16 h-16 bg-indigo-600 dark:bg-indigo-500 rounded-lg flex items-center justify-center text-white mb-6">
                 <svg
@@ -55,8 +57,10 @@ const Benefits = () => {
               </div>
             </div>
           </div>
+          </Link>
 
           {/* Benefit 2 */}
+          <Link href={"https://pmc.ncbi.nlm.nih.gov/articles/PMC11363743/?utm_source=chatgpt.com"}>
           <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div className="p-8">
               <div className="w-16 h-16 bg-purple-600 dark:bg-purple-500 rounded-lg flex items-center justify-center text-white mb-6">
@@ -89,8 +93,10 @@ const Benefits = () => {
               </div>
             </div>
           </div>
+          </Link>
 
           {/* Benefit 3 */}
+          <Link href={"https://bera-journals.onlinelibrary.wiley.com/doi/10.1111/bjet.13471?af=R&utm_source=chatgpt.com"}>
           <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div className="p-8">
               <div className="w-16 h-16 bg-pink-600 dark:bg-pink-500 rounded-lg flex items-center justify-center text-white mb-6">
@@ -123,6 +129,7 @@ const Benefits = () => {
               </div>
             </div>
           </div>
+          </Link>
         </div>
 
         {/* Real-World Impact Section */}
@@ -440,7 +447,7 @@ const Benefits = () => {
         {/* CTA Button */}
         <div className="mt-16 text-center">
           <a
-            href="#cta"
+            href="#pricing"
             className="inline-flex items-center px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
             <span>Discover How Edgamy Works for You</span>

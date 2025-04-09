@@ -15,20 +15,8 @@ const navItems = [
     path: "#about",
   },
   {
-    label: "Features",
-    path: "#features",
-  },
-  {
     label: "Benefits",
     path: "#benefits",
-  },
-  {
-    label: "Testimonials",
-    path: "#testimonials",
-  },
-  {
-    label: "Pricing",
-    path: "#pricing",
   },
   {
     label: "FAQ",
