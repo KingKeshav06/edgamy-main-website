@@ -1,59 +1,6 @@
-"use client"
-import React, { useState } from "react";
+import React from "react"
 
 const Pricing = () => {
-  const [formData, setFormData] = useState({
-    institution: "",
-    name: "",
-    email: "",
-    size: "",
-    message: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  /**
-   * Handles the form submission and sends the data to the API.
-   * If the response is successful, shows a success alert.
-   * If the response is not successful, shows an error alert.
-   * If there is an error, logs the error to the console and shows an error alert.
-   */
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      const data = await response.json();
-      
-      if (response.ok) {
-        alert("Form submitted successfully! We'll be in touch soon.");
-        // Reset form after successful submission
-        setFormData({
-          institution: "",
-          name: "",
-          email: "",
-          size: "",
-          message: "",
-        });
-      } else {
-        alert(`Failed to submit the form: ${data.error || "Unknown error"}`);
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("An error occurred while submitting the form. Please try again later.");
-    }
-  };
-
   return (
     <section id="pricing" className="py-20 bg-gray-50 dark:bg-neutral-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -195,7 +142,7 @@ const Pricing = () => {
                   Connect With Us
                 </h3>
 
-                <form className="space-y-6" onSubmit={handleSubmit}>
+                <form className="space-y-6">
                   {/* Institution Name */}
                   <div>
                     <label
@@ -208,8 +155,6 @@ const Pricing = () => {
                       type="text"
                       id="institution"
                       name="institution"
-                      value={formData.institution}
-                      onChange={handleChange}
                       placeholder="Your institution name"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-neutral-800 dark:text-white"
                       required
@@ -228,8 +173,6 @@ const Pricing = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       placeholder="Full name"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-neutral-800 dark:text-white"
                       required
@@ -248,8 +191,6 @@ const Pricing = () => {
                       type="email"
                       id="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       placeholder="your@email.com"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-neutral-800 dark:text-white"
                       required
@@ -267,8 +208,6 @@ const Pricing = () => {
                     <select
                       id="size"
                       name="size"
-                      value={formData.size}
-                      onChange={handleChange}
                       defaultValue=""
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-neutral-800 dark:text-white"
                     >
@@ -301,8 +240,6 @@ const Pricing = () => {
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleChange}
                       rows={3}
                       placeholder="Tell us about your specific needs"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-neutral-800 dark:text-white"
@@ -473,7 +410,7 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing
