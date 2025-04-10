@@ -259,10 +259,10 @@ const CTA = () => {
                     />
                   </svg>
                   <a
-                    href="mailto:sales@edgamy.com"
+                    href="mailto:founder@edgamy.com"
                     className="hover:text-indigo-200 transition-colors"
                   >
-                    sales@edgamy.com
+                    founder@edgamy.com
                   </a>
                 </li>
                 <li className="flex items-center">
