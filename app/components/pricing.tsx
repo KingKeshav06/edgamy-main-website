@@ -24,7 +24,7 @@ const Pricing = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left Side: Contact Information */}
               <div className="p-8 md:p-12 bg-gradient-to-br from-indigo-600 to-purple-600 dark:from-indigo-700 dark:to-purple-700 text-white">
-                <h3 className="text-2xl font-bold mb-6">Contact for Pricing</h3>
+                <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
                 <p className="mb-8">
                   For detailed pricing information tailored specifically for
                   your institution, please reach out directly to our education
@@ -55,10 +55,10 @@ const Pricing = () => {
                         Email
                       </p>
                       <a
-                        href="mailto:sales@edgamy.com"
+                        href="mailto: founder@edgamy.com"
                         className="text-white hover:text-indigo-100 transition-colors"
                       >
-                        sales@edgamy.com
+                        founder@edgamy.com
                       </a>
                     </div>
                   </div>
@@ -86,10 +86,10 @@ const Pricing = () => {
                         Phone
                       </p>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+919958191298"
                         className="text-white hover:text-indigo-100 transition-colors"
                       >
-                        +123-456-7890
+                        +919958191298
                       </a>
                     </div>
                   </div>
@@ -139,7 +139,7 @@ const Pricing = () => {
               {/* Right Side: Form */}
               <div className="p-8 md:p-12">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
-                  Request Pricing Information
+                  Connect With Us
                 </h3>
 
                 <form className="space-y-6">
@@ -251,7 +251,7 @@ const Pricing = () => {
                     type="submit"
                     className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
-                    Request Pricing
+                    Submit
                   </button>
                 </form>
               </div>

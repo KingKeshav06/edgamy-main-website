@@ -24,7 +24,7 @@ const navItems = [
   },
   {
     label: "Contact",
-    path: "#contact",
+    path: "#pricing",
     isCta: true,
   },
 ]
